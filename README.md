@@ -10,4 +10,6 @@ See: https://en.wikipedia.org/wiki/Entropy_(information_theory)
 
 Also see: https://scikit-learn.org/stable/modules/tree.html#shannon-entropy
 
+Decision trees classify dataset into classes based on their features. Information gain is a measure of the information a feature provides about a class. 
 
+<img width="434" alt="dt" src="https://github.com/user-attachments/assets/30e02fdc-3420-47e1-9a28-669867a83ca6" />
