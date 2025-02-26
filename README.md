@@ -10,6 +10,10 @@ See: https://en.wikipedia.org/wiki/Entropy_(information_theory)
 
 Also see: https://scikit-learn.org/stable/modules/tree.html#shannon-entropy
 
-Decision trees classify dataset into classes based on their features. Information gain is a measure of the information a feature provides about a class. 
+Decision trees classify dataset into classes based on their features. Information gain is a measure of the information a feature provides about a class. It is the metric to quantify the reduction in randomness of dataset, post-split into homogeneous subsets of data. 
 
 <img width="434" alt="dt" src="https://github.com/user-attachments/assets/30e02fdc-3420-47e1-9a28-669867a83ca6" />
+
+In decision trees, each internal/decision mode represents a feature/attribute, each branch is a decision rule and each leaf node is the outcome/result.
+
+<img width="353" alt="dn" src="https://github.com/user-attachments/assets/656a8b20-bf59-4e21-a40a-9c3dd0464c90" />
