@@ -23,3 +23,10 @@ The impurity of a dataset is measured using criterion like 𝒆𝒏𝒕𝒓𝒐�
 Read: https://sebastianraschka.com/faq/docs/decisiontree-error-vs-entropy.html
 
 High information gain (low information loss) implies that a split leads to more homogenous subsets, making it favorable for building an accurate classifier. A decision tree algorithm uses information gain to split a node and choose the features that lead to maximum reduction in uncertainty (impurity) in the child nodes over that in the parent node. 
+
+<img width="222" alt="11" src="https://github.com/user-attachments/assets/3163e8df-d86a-42b2-bc46-e6216ef0c3e9" />
+![22](https://github.com/user-attachments/assets/7c6a8520-8f20-43ff-a224-d4abe692e290)
+
+
+
+
