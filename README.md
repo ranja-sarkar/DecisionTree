@@ -28,6 +28,18 @@ High information gain (low information loss) implies that a split leads to more 
 
 <img width="392" alt="22" src="https://github.com/user-attachments/assets/79ade31e-d799-4b4b-9386-226e4a527f4f" />
 
+# -------
+
+Isolation Forest is one decision tree algorithm for anomaly detection in data. Based on the assumption of unsupervised learning, most inflowing data are normal and only a minor percentage is anomalous. 
+
+Unsupervised methods do not depend on labeled training data. Apart from isolation forest, examples of unsupervised learning algorithms are k-means clustering, one-class SVM, autoencoders.
+
+In Isolation Forest, randomly sub-sampled data is processed based on randomly selected features. The samples that travel deeper into the tree are less likely to be outliers as they require more cuts to isolate.
+
+<img width="316" alt="33" src="https://github.com/user-attachments/assets/009b5e4b-7824-48b3-a3d8-65baf8e888b2" />
+
+
+
 
 
 
