@@ -26,8 +26,6 @@ High information gain (low information loss) implies that a split leads to more 
 
 <img width="222" alt="11" src="https://github.com/user-attachments/assets/3163e8df-d86a-42b2-bc46-e6216ef0c3e9" />
 
-![22](https://github.com/user-attachments/assets/09df6aeb-34e8-4600-9d9b-1095a3088cc1)
-
 <img width="392" alt="22" src="https://github.com/user-attachments/assets/79ade31e-d799-4b4b-9386-226e4a527f4f" />
 
 
