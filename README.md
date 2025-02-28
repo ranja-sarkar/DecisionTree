@@ -28,6 +28,11 @@ High information gain (low information loss) implies that a split leads to more 
 
 <img width="392" alt="22" src="https://github.com/user-attachments/assets/79ade31e-d799-4b4b-9386-226e4a527f4f" />
 
+For a number of classes, p_k is the fraction of items labeled with a class k. Gini index (G) is faster given its numerical form, it is less computationally intensive and measures the degree or probability of wrong classification when a feature is randomly chosen. The goal is to find the feature and threshold that best splits the dataset into subsets with lower impurities. 
+
+When dealing with imbalanced data, it becomes essential to choose only one criterion for evaluation of the model. The Gini index tends to be less sensitive to class imbalance, as it works to minimize the misclassification error which can be beneficial as it avoids overfitting to the majority class.
+
+
 # -------
 
 Isolation Forest is one decision tree algorithm for anomaly detection in data. Based on the assumption of unsupervised learning, most inflowing data are normal and only a minor percentage is anomalous. 
