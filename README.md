@@ -33,7 +33,7 @@ For a number of classes, p_k is the fraction of items labeled with a class k. Gi
 When dealing with imbalanced data, it becomes essential to choose only one criterion for evaluation of the model. The Gini index tends to be less sensitive to class imbalance, as it works to minimize the misclassification error which can be beneficial as it avoids overfitting to the majority class.
 
 
-# -------
+-------
 
 Isolation Forest is one decision tree algorithm for anomaly detection in data. Based on the assumption of unsupervised learning, most inflowing data are normal and only a minor percentage is anomalous. 
 
