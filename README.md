@@ -35,9 +35,8 @@ When dealing with imbalanced data, it becomes essential to choose only one crite
 
 -------
 
-Isolation Forest is one decision tree algorithm for anomaly detection in data. Based on the assumption of unsupervised learning, most inflowing data are normal and only a minor percentage is anomalous. 
-
-Unsupervised methods do not depend on labeled training data. Apart from isolation forest, examples of unsupervised learning algorithms are k-means clustering, one-class SVM, autoencoders.
+**Isolation Forest is one decision tree algorithm for anomaly detection in data.** 
+It's an unsupervised learning (unlabeled training data) algorithm that assumes most inflowing data are normal and only a minor percentage is anomalous. 
 
 In Isolation Forest, randomly sub-sampled data is processed based on randomly selected features. The samples that travel deeper into the tree are less likely to be outliers as they require more cuts to isolate.
 
