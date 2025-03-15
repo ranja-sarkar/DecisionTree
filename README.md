@@ -30,7 +30,10 @@ High information gain (low information loss) implies that a split leads to more 
 
 For a number of classes, p_k is the fraction of items labeled with a class k. Gini index (G) is faster given its numerical form, it is less computationally intensive and measures the degree or probability of wrong classification when a feature is randomly chosen. The goal is to find the feature and threshold that best splits the dataset into subsets with lower impurities. 
 
-When dealing with imbalanced data, it becomes essential to choose only one criterion for evaluation of the model. The Gini index tends to be less sensitive to class imbalance, as it works to minimize the misclassification error which can be beneficial as it avoids overfitting to the majority class.
+When dealing with imbalanced data, it becomes essential to choose only one criterion for evaluation of the model. The Gini index tends to be less sensitive to class imbalance, as it works to minimize the misclassification error which can be beneficial as it avoids overfitting to the majority class. 
+
+https://mlu-explain.github.io/decision-tree/
+
 
 
 -------
