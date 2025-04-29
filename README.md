@@ -4,7 +4,10 @@ A decision tree consists of a series of sequential decisions (decision nodes) on
 
 Information Theory: https://monoskop.org/images/2/2f/Shannon_Claude_E_1956_The_Bandwagon.pdf
 
-In information theory, the mutual information between two quantities is a measure of the extent to which knowledge of one quantity reduces uncertainty about the other. It quantifies the amount of information obtained about one random variable by observing another random variable. This concept is intimately linked to that of entropy of a random variable. It’s noteworthy that Shannon entropy (node-splitting criterion) is equivalent to minimizing the log loss (also called cross-entropy). 
+In information theory, the mutual information between two quantities is a measure of the extent to which knowledge of one quantity reduces uncertainty about the other. It quantifies the amount of information obtained about one random variable by observing another random variable. This concept is intimately linked to that of entropy of a random variable. 
+
+It’s noteworthy that Shannon entropy (node-splitting criterion) is equivalent to minimizing the log loss (also called cross-entropy). 
+Decision trees trained using entropy or Gini are comparable, and only in a few cases do results differ considerably. In the case of imbalanced data, entropy might be more prudent yet, Gini might train faster as it does not make use of logarithms.
 
 See: https://en.wikipedia.org/wiki/Entropy_(information_theory)
 
@@ -38,6 +41,9 @@ For a number of classes, p_k is the fraction of items labeled with a class k. Gi
 
 -------
 
+Without question, Decision Trees have a lot of things going for them. They're simple models that are easy to interpret. They're fast to train and require minimal data preprocessing. And they hand outliers with ease. Yet they suffer from a major limitation, and that is their instability compared with other predictors. They can be extremely sensitive to small perturbations in the data: a minor change in the training examples can result in a drastic change in the structure of the Decision Tree. 
+
+
 **Isolation Forest is one decision tree algorithm for anomaly detection in data.** 
 It's an unsupervised learning (unlabeled training data) algorithm that assumes most inflowing data are normal and only a minor percentage is anomalous. 
 
@@ -45,8 +51,14 @@ In Isolation Forest, randomly sub-sampled data is processed based on randomly se
 
 <img width="316" alt="33" src="https://github.com/user-attachments/assets/009b5e4b-7824-48b3-a3d8-65baf8e888b2" />
 
+---------
+we just saw that Decision Trees are subject to high variance when exposed to small perturbations of the training data, that fail to clearly distinguish between persistent and random patterns in the data, a problem known as overfitting. This is problematic because it means that our model won't perform well when exposed to new data.
+
+There are ways to prevent excessive growth of Decision Trees by pruning them, for instance constraining their maximum depth, limiting the number of leaves that can be created, or setting a minimum size for the amount of items in each leaf and not allowing leaves with too few items in them.
+
+As for the issue of high variance? Well, unfortunately it's an intrinsic characteristic when training a single Decision Tree.
 
 
-
+Perhaps ironically, one way to alleviate the instability induced by perturbations is to introduce an extra layer of randomness in the training process. In practice this can be achieved by creating collections of Decision Trees trained on slightly different versions of the data set, the combined predictions of which do not suffer so heavily from high variance. This approach opens the door to one of the most successful Machine Learning algorithms thus far: random forests.
 
 
