@@ -22,13 +22,13 @@ The impurity of a dataset is measured using criterion like 𝒆𝒏𝒕𝒓𝒐�
 
 Read: https://sebastianraschka.com/faq/docs/decisiontree-error-vs-entropy.html
 
-High information gain (low information loss) implies that a split leads to more homogenous subsets, making it favorable for building an accurate classifier. A decision tree algorithm uses information gain to split a node and choose the features that lead to maximum reduction in uncertainty (impurity) in the child nodes over that in the parent node. 
+High information gain implies that a split leads to more homogenous subsets, making it favorable for building an accurate classifier. A decision tree algorithm uses information gain to split a node and choose the features that lead to maximum reduction in uncertainty (impurity) in the child nodes over that in the parent node. 
 
 <img width="222" alt="11" src="https://github.com/user-attachments/assets/3163e8df-d86a-42b2-bc46-e6216ef0c3e9" />
 
-<img width="392" alt="22" src="https://github.com/user-attachments/assets/79ade31e-d799-4b4b-9386-226e4a527f4f" />
-
 For a number of classes, p_k is the fraction of items labeled with a class k. Gini index (G) is faster given its numerical form, it is less computationally intensive and measures the degree or probability of wrong classification when a feature is randomly chosen. The goal is to find the feature and threshold that best splits the dataset into subsets with lower impurities. 
+
+<img width="392" alt="22" src="https://github.com/user-attachments/assets/79ade31e-d799-4b4b-9386-226e4a527f4f" />
 
 When dealing with imbalanced data, it becomes essential to choose only one criterion for evaluation of the model. The Gini index tends to be less sensitive to class imbalance, as it works to minimize the misclassification error which can be beneficial as it avoids overfitting to the majority class. 
 
