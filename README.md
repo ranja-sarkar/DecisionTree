@@ -28,8 +28,10 @@ Read: https://sebastianraschka.com/faq/docs/decisiontree-error-vs-entropy.html
 The recursive process stops if after a split all elements in a child node are of the similar. Additional stopping conditions may be imposed, such as requiring a minimum number of samples per leaf to continue splitting, or finishing when the trained tree has reached a given maximum depth. 
 
 More: https://ranjas.substack.com/p/calibration-of-a-classifier
+
 Classifier parameters: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
 
+<img width="260" alt="ig" src="https://github.com/user-attachments/assets/5cd97a94-50e6-474f-a9ed-b70f4049b128" />
 
 High **information gain (IG)** implies that a split leads to more homogenous subsets, making it favorable for building an accurate classifier. A decision tree algorithm uses information gain to split a node and choose the features that lead to maximum reduction in uncertainty (impurity) in the child nodes over that in the parent node. 
 
@@ -60,7 +62,7 @@ In Isolation Forest, randomly sub-sampled data is processed based on randomly se
 ---------
 we just saw that Decision Trees are subject to high variance when exposed to small perturbations of the training data, that fail to clearly distinguish between persistent and random patterns in the data, a problem known as overfitting. This is problematic because it means that our model won't perform well when exposed to new data. 
 
-<img width="260" alt="ig" src="https://github.com/user-attachments/assets/5cd97a94-50e6-474f-a9ed-b70f4049b128" />
+
 
 
 There are ways to prevent excessive growth of Decision Trees by pruning them, for instance constraining their maximum depth, limiting the number of leaves that can be created, or setting a minimum size for the amount of items in each leaf and not allowing leaves with too few items in them.
