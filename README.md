@@ -41,35 +41,30 @@ For a number of classes, p_k is the fraction of items labeled with a class k. Gi
 
 <img width="392" alt="22" src="https://github.com/user-attachments/assets/79ade31e-d799-4b4b-9386-226e4a527f4f" />
 
- which can be beneficial as it avoids overfitting to the majority class. 
-
-
-
-
 
 -------
 
-Without question, Decision Trees have a lot of things going for them. They're simple models that are easy to interpret. They're fast to train and require minimal data preprocessing. And they hand outliers with ease. Yet they suffer from a major limitation, and that is their instability compared with other predictors. They can be extremely sensitive to small perturbations in the data: a minor change in the training examples can result in a drastic change in the structure of the Decision Tree. 
+Decision Trees are simple models that are easy to interpret. They're fast to train and require minimal data preprocessing. And they handle outliers with ease. Yet they suffer from a major limitation, and that is their instability compared with other predictors. They can be extremely sensitive to small perturbations in the data: a minor change in the training example can result in a drastic change in the structure of the tree. 
 
 
-**Isolation Forest is one decision tree algorithm for anomaly detection in data.** 
-It's an unsupervised learning (unlabeled training data) algorithm that assumes most inflowing data are normal and only a minor percentage is anomalous. 
+**Isolation Forest is one algorithm for anomaly detection in data.** It's an unsupervised learning (unlabeled training data) algorithm that assumes most inflowing data are normal and only a minor percentage is anomalous. 
 
 In Isolation Forest, randomly sub-sampled data is processed based on randomly selected features. The samples that travel deeper into the tree are less likely to be outliers as they require more cuts to isolate.
 
 <img width="316" alt="33" src="https://github.com/user-attachments/assets/009b5e4b-7824-48b3-a3d8-65baf8e888b2" />
 
 ---------
-we just saw that Decision Trees are subject to high variance when exposed to small perturbations of the training data, that fail to clearly distinguish between persistent and random patterns in the data, a problem known as overfitting. This is problematic because it means that our model won't perform well when exposed to new data. 
+
+Decision Trees are subject to high variance when exposed to small perturbations of the training data. They typically lead to overfitting (unable to distinguish between persistent and random patterns in data). This is problematic because it means that our model won't perform well when exposed to new data. 
 
 
+There are ways to prevent excessive growth of Decision Trees by pruning them, for instance constraining their maximum depth, limiting the number of leaves that can be created, or setting a minimum size of samples in each leaf and not allowing leaves with too few items in them.
+
+What about the issue of high variance? 
+
+Well, unfortunately it's an intrinsic characteristic when training a single Decision Tree.
 
 
-There are ways to prevent excessive growth of Decision Trees by pruning them, for instance constraining their maximum depth, limiting the number of leaves that can be created, or setting a minimum size for the amount of items in each leaf and not allowing leaves with too few items in them.
-
-As for the issue of high variance? Well, unfortunately it's an intrinsic characteristic when training a single Decision Tree.
-
-
-Perhaps ironically, one way to alleviate the instability induced by perturbations is to introduce an extra layer of randomness in the training process. In practice this can be achieved by creating collections of Decision Trees trained on slightly different versions of the data set, the combined predictions of which do not suffer so heavily from high variance. This approach opens the door to one of the most successful Machine Learning algorithms thus far: random forests.
+Perhaps ironically, one way to alleviate the instability induced by perturbations is to introduce an extra layer of randomness in the training process. In practice this can be achieved by creating collections of Decision Trees trained on slightly different versions of the dataset, the combined predictions of which do not suffer so heavily from high variance. This approach opens the door to one of the most successful ML algorithms thus far - random forest.
 
 
