@@ -25,7 +25,7 @@ The impurity of a dataset is measured using criterion like 𝒆𝒏𝒕𝒓𝒐�
 
 Read: https://sebastianraschka.com/faq/docs/decisiontree-error-vs-entropy.html
 
-High information gain implies that a split leads to more homogenous subsets, making it favorable for building an accurate classifier. A decision tree algorithm uses information gain to split a node and choose the features that lead to maximum reduction in uncertainty (impurity) in the child nodes over that in the parent node. 
+High **information gain (IG)** implies that a split leads to more homogenous subsets, making it favorable for building an accurate classifier. A decision tree algorithm uses information gain to split a node and choose the features that lead to maximum reduction in uncertainty (impurity) in the child nodes over that in the parent node. 
 
 <img width="222" alt="11" src="https://github.com/user-attachments/assets/3163e8df-d86a-42b2-bc46-e6216ef0c3e9" />
 
@@ -52,7 +52,10 @@ In Isolation Forest, randomly sub-sampled data is processed based on randomly se
 <img width="316" alt="33" src="https://github.com/user-attachments/assets/009b5e4b-7824-48b3-a3d8-65baf8e888b2" />
 
 ---------
-we just saw that Decision Trees are subject to high variance when exposed to small perturbations of the training data, that fail to clearly distinguish between persistent and random patterns in the data, a problem known as overfitting. This is problematic because it means that our model won't perform well when exposed to new data.
+we just saw that Decision Trees are subject to high variance when exposed to small perturbations of the training data, that fail to clearly distinguish between persistent and random patterns in the data, a problem known as overfitting. This is problematic because it means that our model won't perform well when exposed to new data. 
+
+<img width="260" alt="ig" src="https://github.com/user-attachments/assets/5cd97a94-50e6-474f-a9ed-b70f4049b128" />
+
 
 There are ways to prevent excessive growth of Decision Trees by pruning them, for instance constraining their maximum depth, limiting the number of leaves that can be created, or setting a minimum size for the amount of items in each leaf and not allowing leaves with too few items in them.
 
