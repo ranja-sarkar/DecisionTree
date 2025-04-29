@@ -65,6 +65,6 @@ What about the issue of high variance?
 Well, unfortunately it's an intrinsic characteristic when training a single Decision Tree.
 
 
-Perhaps ironically, one way to alleviate the instability induced by perturbations is to introduce an extra layer of randomness in the training process. In practice this can be achieved by creating collections of Decision Trees trained on slightly different versions of the dataset, the combined predictions of which do not suffer so heavily from high variance. This approach opens the door to one of the most successful ML algorithms thus far - random forest.
+One way to alleviate the instability induced by perturbations is to introduce an extra layer of randomness in the training process. In practice this can be achieved by creating collections of Decision Trees trained on slightly different versions of the dataset, the combined predictions of which do not suffer so heavily from high variance. This approach opens the door to one of the most successful ML algorithms thus far - random forest.
 
 
