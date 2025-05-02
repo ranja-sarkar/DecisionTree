@@ -27,9 +27,7 @@ Read: https://sebastianraschka.com/faq/docs/decisiontree-error-vs-entropy.html
 
 The recursive process stops if after a split all elements in a child node are of the similar. Additional stopping conditions may be imposed, such as requiring a minimum number of samples per leaf to continue splitting, or finishing when the trained tree has reached a given maximum depth. 
 
-More: https://ranjas.substack.com/p/calibration-of-a-classifier
-
-About hyperparameters: 
+About classifier hyperparameters: 
 
 https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
 
@@ -77,6 +75,8 @@ Reference read for classifiers:
 
 2. https://ranjas.substack.com/p/assessing-classifiers
 
-3. https://ranjas.substack.com/p/ensemble-learners
+3. https://ranjas.substack.com/p/calibration-of-a-classifier
+
+4. https://ranjas.substack.com/p/ensemble-learners
    
    
