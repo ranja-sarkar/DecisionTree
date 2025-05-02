@@ -29,7 +29,9 @@ The recursive process stops if after a split all elements in a child node are of
 
 More: https://ranjas.substack.com/p/calibration-of-a-classifier
 
-Classifier parameters: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+About hyperparameters: 
+
+https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
 
 <img width="260" alt="ig" src="https://github.com/user-attachments/assets/5cd97a94-50e6-474f-a9ed-b70f4049b128" />
 
@@ -67,4 +69,7 @@ Well, unfortunately it's an intrinsic characteristic when training a single Deci
 
 One way to alleviate the instability induced by perturbations is to introduce an extra layer of randomness in the training process. In practice this can be achieved by creating collections of Decision Trees trained on slightly different versions of the dataset, the combined predictions of which do not suffer so heavily from high variance. This approach opens the door to one of the most successful ML algorithms thus far - random forest.
 
+---------
+
+Reference read for binary classification: https://ranjas.substack.com/p/power-analysis-24-02-02
 
