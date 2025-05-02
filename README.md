@@ -1,6 +1,8 @@
 # Decision Trees
 
-A decision tree consists of a series of sequential decisions (decision nodes) on features from a dataset. The resulting flow-like structure is navigated via conditional control statements or if-then rules, which split each node into two or more leaf nodes or terminal nodes. To train a decision tree out of a dataset means to figure out the order in which the decisions should be assembled from the root to the leaves. New datapoint may then be passed from top down until the leaf/terminal node is reached, representing a prediction for that datapoint.
+A **decision tree** consists of a series of sequential decisions (decision nodes) on features from a dataset. The resulting flow-like structure is navigated via conditional control statements or if-then rules, which split each node into two or more leaf (terminal) nodes. 
+
+To train a decision tree out of a dataset means to figure out the order in which the decisions should be assembled from the root to the leaves. New datapoint may then be passed from top down until the leaf/terminal node is reached, representing a prediction for that datapoint.
 
 Information Theory: https://monoskop.org/images/2/2f/Shannon_Claude_E_1956_The_Bandwagon.pdf
 
