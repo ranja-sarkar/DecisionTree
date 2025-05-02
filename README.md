@@ -71,5 +71,10 @@ One way to alleviate the instability induced by perturbations is to introduce an
 
 ---------
 
-Reference read for binary classification: https://ranjas.substack.com/p/power-analysis-24-02-02
+Reference read for classifiers: 
 
+1. https://ranjas.substack.com/p/power-analysis-24-02-02
+
+2. https://ranjas.substack.com/p/assessing-classifiers
+   
+   
