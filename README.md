@@ -20,7 +20,9 @@ Decision trees classify dataset into classes based on their features. Informatio
 
 <img width="434" alt="dt" src="https://github.com/user-attachments/assets/30e02fdc-3420-47e1-9a28-669867a83ca6" />
 
-In decision trees, each internal/decision mode represents a feature/attribute, each branch is a decision rule and each leaf node is the outcome/result. Decision node represents a parent class and leaf node represents a child class. The feature values at the child nodes are as pure as possible, and most informative about the target (response variable) in the dataset. A node with only one class is considered pure. Pure samples have zero entropy, meaning there is no uncertainty in the outcome (from a collection of labeled datapoints). Impure samples (dissimilar datapoints) have larger entropy values.
+In decision trees, each internal/decision mode represents a feature/attribute, each branch is a decision rule and each leaf node is the outcome/result. Decision node represents a parent class and leaf node represents a child class. The feature values at the child nodes are as pure as possible, and most informative about the target (response variable) in the dataset. A node with only one class is considered pure. 
+
+Pure samples have zero entropy, meaning there is no uncertainty in the outcome (from a collection of labeled datapoints). Impure samples (dissimilar datapoints) have larger entropy values.
 
 <img width="353" alt="dn" src="https://github.com/user-attachments/assets/656a8b20-bf59-4e21-a40a-9c3dd0464c90" />
 
