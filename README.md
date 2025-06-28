@@ -4,6 +4,8 @@ A **decision tree** consists of a series of sequential decisions (decision nodes
 
 To train a decision tree out of a dataset means to figure out the order in which the decisions should be assembled from the root to the leaves. New datapoint may then be passed from top down until the leaf (terminal) node is reached, representing a prediction for that datapoint. 
 
+Decision Trees are simple models that are easy to interpret. They're fast to train and require minimal data preprocessing. And they handle outliers with ease. Yet they suffer from a major limitation, and that is their instability compared with other predictors. They can be extremely sensitive to small perturbations in the data: a minor change in the training example can result in a drastic change in the structure of the tree. 
+
 # Mutual Information
 
 In **information theory**, the mutual information between two quantities is a measure of the extent to which knowledge of one quantity reduces uncertainty about the other. It quantifies the amount of information obtained about one random variable by observing another random variable. This concept is intimately linked to that of entropy of a random variable. It’s noteworthy that Shannon entropy (node-splitting criterion) is equivalent to minimizing the log loss (also called cross-entropy). 
@@ -51,9 +53,6 @@ For a number of classes, p_k is the fraction of items labeled with a class k. Gi
 
 
 -------
-
-Decision Trees are simple models that are easy to interpret. They're fast to train and require minimal data preprocessing. And they handle outliers with ease. Yet they suffer from a major limitation, and that is their instability compared with other predictors. They can be extremely sensitive to small perturbations in the data: a minor change in the training example can result in a drastic change in the structure of the tree. 
-
 
 **Isolation Forest is one algorithm for anomaly detection in data.** It's an unsupervised learning (unlabeled training data) algorithm that assumes most inflowing data are normal and only a minor percentage is anomalous. 
 
