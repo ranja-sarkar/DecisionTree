@@ -16,7 +16,7 @@ Also see: https://scikit-learn.org/stable/modules/tree.html#shannon-entropy
 
 -----
 
-Decision trees classify dataset into classes based on their features. 
+Decision trees classify a dataset based on the features in the dataset. 
 
 <img width="260" alt="ig" src="https://github.com/user-attachments/assets/5cd97a94-50e6-474f-a9ed-b70f4049b128" />
 
