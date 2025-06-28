@@ -32,8 +32,6 @@ Read: https://sebastianraschka.com/faq/docs/decisiontree-error-vs-entropy.html
 
 The recursive process stops if after a split all elements in a child node are of the similar. Additional stopping conditions may be imposed, such as requiring a minimum number of samples per leaf to continue splitting, or finishing when the trained tree has reached a given maximum depth. 
 
-About classifier hyperparameters: 
-
 https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
 
 <img width="260" alt="ig" src="https://github.com/user-attachments/assets/5cd97a94-50e6-474f-a9ed-b70f4049b128" />
