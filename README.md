@@ -52,9 +52,9 @@ For a number of classes, p_k is the fraction of items labeled with a class k. Gi
 <img width="392" alt="22" src="https://github.com/user-attachments/assets/79ade31e-d799-4b4b-9386-226e4a527f4f" />
 
 
--------
+# Anomaly dtection with decision trees
 
-**Isolation Forest is one algorithm for anomaly detection in data.** It's an unsupervised learning (unlabeled training data) algorithm that assumes most inflowing data are normal and only a minor percentage is anomalous. 
+**Isolation Forest is one algorithm for anomaly detection.** It's an unsupervised learning algorithm that assumes most inflowing data are normal and only a minor percentage is anomalous. 
 
 In Isolation Forest, randomly sub-sampled data is processed based on randomly selected features. The samples that travel deeper into the tree are less likely to be outliers as they require more cuts to isolate.
 
