@@ -16,7 +16,11 @@ Also see: https://scikit-learn.org/stable/modules/tree.html#shannon-entropy
 
 -----
 
-Decision trees classify dataset into classes based on their features. Information gain is a measure of the information a feature provides about a class. It is the metric to quantify the reduction in randomness of dataset, post-split into homogeneous subsets of data. 
+Decision trees classify dataset into classes based on their features. 
+
+<img width="260" alt="ig" src="https://github.com/user-attachments/assets/5cd97a94-50e6-474f-a9ed-b70f4049b128" />
+
+Information gain is a measure of the information a feature provides about a class. It is the metric to quantify the reduction in randomness of dataset, post-split into homogeneous subsets of data. 
 
 <img width="434" alt="dt" src="https://github.com/user-attachments/assets/30e02fdc-3420-47e1-9a28-669867a83ca6" />
 
@@ -34,7 +38,6 @@ The recursive process stops if after a split all elements in a child node are of
 
 https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
 
-<img width="260" alt="ig" src="https://github.com/user-attachments/assets/5cd97a94-50e6-474f-a9ed-b70f4049b128" />
 
 High **information gain (IG)** implies that a split leads to more homogenous subsets, making it favorable for building an accurate classifier. A decision tree algorithm uses information gain to split a node and choose the features that lead to maximum reduction in uncertainty (impurity) in the child nodes over that in the parent node. 
 
