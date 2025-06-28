@@ -34,23 +34,17 @@ For a number of classes, p_k is the fraction of items labeled with a class k. Gi
 
 <img width="434" alt="dt" src="https://github.com/user-attachments/assets/30e02fdc-3420-47e1-9a28-669867a83ca6" />
 
-Decision trees classify a dataset based on the features in the dataset. 
+Decision trees classify a dataset based on the features in the dataset. In decision trees, each internal/decision mode represents a feature/attribute, each branch is a decision rule and each leaf node is the outcome/result. Decision node represents a parent class and leaf node represents a child class. The feature values at the child nodes are as pure as possible, and most informative about the target (response variable) in the dataset. 
 
-
-
-In decision trees, each internal/decision mode represents a feature/attribute, each branch is a decision rule and each leaf node is the outcome/result. Decision node represents a parent class and leaf node represents a child class. The feature values at the child nodes are as pure as possible, and most informative about the target (response variable) in the dataset. A node with only one class is considered pure. 
+A node with only one class is considered pure. Pure samples have zero entropy, meaning there is no uncertainty in the outcome (from a collection of labeled datapoints). Impure samples (dissimilar datapoints) have larger entropy values.
 
 <img width="353" alt="dn" src="https://github.com/user-attachments/assets/656a8b20-bf59-4e21-a40a-9c3dd0464c90" />
-
-Pure samples have zero entropy, meaning there is no uncertainty in the outcome (from a collection of labeled datapoints). Impure samples (dissimilar datapoints) have larger entropy values.
 
 Higher impurities indicate a mix (heterogeneity) of different classes within the dataset. Each node has an entropy value. The parent node entropy is larger than the average entropy of 2 child nodes and the node splitting continues (entropy reduces) until a predefined stopping criterion is met. 
 
 Read: https://sebastianraschka.com/faq/docs/decisiontree-error-vs-entropy.html
 
 The recursive process stops if after a split all elements in a child node are of the similar. Additional stopping conditions may be imposed, such as requiring a minimum number of samples per leaf to continue splitting, or finishing when the trained tree has reached a given maximum depth. 
-
-https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
 
 
 # Anomaly dtection with decision trees
@@ -63,18 +57,17 @@ In Isolation Forest, randomly sub-sampled data is processed based on randomly se
 
 ---------
 
-Decision Trees are subject to high variance when exposed to small perturbations of the training data. They typically lead to overfitting (unable to distinguish between persistent and random patterns in data). This is problematic because it means that our model won't perform well when exposed to new data. 
+Decision Trees are subject to high variance when exposed to small perturbations of the training data. They typically lead to overfitting - unable to distinguish between persistent and random patterns in data. This is problematic because it means that our model won't perform well when exposed to new data. 
 
+There are ways to prevent excessive growth of decision trees by pruning them, for instance constraining their maximum depth, limiting the number of leaves that can be created, or setting a minimum size of samples in each leaf and not allowing leaves with too few items in them.
 
-There are ways to prevent excessive growth of Decision Trees by pruning them, for instance constraining their maximum depth, limiting the number of leaves that can be created, or setting a minimum size of samples in each leaf and not allowing leaves with too few items in them.
+How to handle the issue of high variance? 
 
-What about the issue of high variance? 
+Well, it's an intrinsic characteristic when training a single decision tree.
 
-Well, unfortunately it's an intrinsic characteristic when training a single Decision Tree.
+One way to alleviate the instability or high variance induced by perturbations is to introduce an extra layer of randomness in the training process. In practice this can be achieved by creating collections of decision trees trained on slightly different versions of the dataset, the combined predictions of which do not suffer so heavily from high variance. This approach opens the door to one of the most successful ML algorithms thus far - random forest.
 
-
-One way to alleviate the instability induced by perturbations is to introduce an extra layer of randomness in the training process. In practice this can be achieved by creating collections of Decision Trees trained on slightly different versions of the dataset, the combined predictions of which do not suffer so heavily from high variance. This approach opens the door to one of the most successful ML algorithms thus far - random forest.
-
+https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
 
    
    
