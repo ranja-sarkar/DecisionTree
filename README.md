@@ -47,7 +47,7 @@ Read: https://sebastianraschka.com/faq/docs/decisiontree-error-vs-entropy.html
 The recursive process stops if after a split all elements in a child node are of the similar. Additional stopping conditions may be imposed, such as requiring a minimum number of samples per leaf to continue splitting, or finishing when the trained tree has reached a given maximum depth. 
 
 
-# Anomaly dtection with decision trees
+# Anomaly detection with decision trees
 
 **Isolation Forest is one algorithm for anomaly detection.** It's an unsupervised learning algorithm that assumes most inflowing data are normal and only a minor percentage is anomalous. 
 
@@ -55,7 +55,7 @@ In Isolation Forest, randomly sub-sampled data is processed based on randomly se
 
 <img width="316" alt="33" src="https://github.com/user-attachments/assets/009b5e4b-7824-48b3-a3d8-65baf8e888b2" />
 
----------
+# Overfitting by a decision tree
 
 Decision Trees are subject to high variance when exposed to small perturbations of the training data. They typically lead to overfitting - unable to distinguish between persistent and random patterns in data. This is problematic because it means that our model won't perform well when exposed to new data. 
 
