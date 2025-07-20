@@ -55,6 +55,8 @@ In Isolation Forest, randomly sub-sampled data is processed based on randomly se
 
 <img width="316" alt="33" src="https://github.com/user-attachments/assets/009b5e4b-7824-48b3-a3d8-65baf8e888b2" />
 
+Example (multivariate dataset): https://fraud-detection-handbook.github.io/fraud-detection-handbook/Chapter_7_DeepLearning/Autoencoders.html#comparison-with-another-unsupervised-baseline-isolation-forest
+
 # Overfitting by a decision tree
 
 Decision Trees are subject to high variance when exposed to small perturbations of the training data. They typically lead to overfitting - unable to distinguish between persistent and random patterns in data. This is problematic because it means that our model won't perform well when exposed to new data. 
