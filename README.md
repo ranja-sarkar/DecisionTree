@@ -44,7 +44,7 @@ Higher impurities indicate a mix (heterogeneity) of different classes within the
 
 Read: https://sebastianraschka.com/faq/docs/decisiontree-error-vs-entropy.html
 
-The recursive process stops if after a split all elements in a child node are of the similar. Additional stopping conditions may be imposed, such as requiring a minimum number of samples per leaf (min_samples_leaf) to continue splitting, or finishing when the trained tree has reached a given maximum depth. 
+The recursive process stops if after a split all elements in a child node are of the similar. Additional stopping conditions may be imposed, such as requiring a minimum number of samples per leaf (min_samples_leaf) to continue splitting, or finishing when the trained tree has reached a given maximum depth. ⤵️
 
 
 # Anomaly detection with decision trees (IF)
