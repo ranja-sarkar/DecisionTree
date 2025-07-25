@@ -59,7 +59,7 @@ Example (multivariate dataset): https://fraud-detection-handbook.github.io/fraud
 
 # Decision tree tends to overfit on data
 
-Decision Trees are subject to high variance when exposed to small perturbations of the training data. They typically lead to overfitting - unable to distinguish between persistent and random patterns in data. This is problematic because it means that our model won't perform well when exposed to new data. 
+A decision tree is subjected to high variance when exposed to small perturbations of the training data. It typically leads to overfitting - unable to distinguish between persistent and random patterns in data. This is problematic because it means that our model won't perform well when exposed to new data. 
 
 https://scikit-learn.org/stable/modules/tree.html
 
