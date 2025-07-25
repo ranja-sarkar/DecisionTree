@@ -73,6 +73,8 @@ There are ways to prevent excessive growth of decision trees by pruning them, fo
    
 4. max_leaf_nodes -> limiting the number of leaf nodes that can be created (best nodes are defined as relative reduction in impurity. If it's None, then unlimited number of leaf nodes are created).
 
+   Example usage with scikit-learn: https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html
+   
 💡 How to handle the issue of high variance? 
 
 Well, it's an intrinsic characteristic when training a single decision tree.
