@@ -61,19 +61,19 @@ Example (multivariate dataset): https://fraud-detection-handbook.github.io/fraud
 
 A decision tree is subjected to high variance when exposed to small perturbations of the training data. It typically leads to overfitting - unable to distinguish between persistent and random patterns in data. This is problematic because it means that our model won't perform well when exposed to new data. 
 
-https://scikit-learn.org/stable/modules/tree.html
+DTs: https://scikit-learn.org/stable/modules/tree.html
 
 There are ways to prevent excessive growth of decision trees by pruning them, for instance 
 
-1. constraining their maximum depth (nodes are expanded until all leaf nodes are pure or they contain less than (min_samples_split) the minimum number of samples required to split a node)
+1. max_depth -> constraining their maximum depth (nodes are expanded until all leaf nodes are pure or they contain less than (min_samples_split) the minimum number of samples required to split a node)
    
-2. limiting the number of leaves that can be created
+2. min_samples_split -> minimum number of samples required to split a node (a split at any depth is only considered if there're min_samples_leaf training samples in each of the left and right branches) 
    
-3. setting a minimum size of samples in each leaf (min_samples_leaf)
+3. min_samples_leaf -> setting a minimum size of samples in each leaf (not allowing leaf nodes with too few items in them)
    
-4. not allowing leaves with too few items in them.
+4. max_leaf_nodes -> limiting the number of leaf nodes that can be created (best nodes are defined as relative reduction in impurity. If it's None, then unlimited number of leaf nodes are created).
 
-How to handle the issue of high variance? 
+💡 How to handle the issue of high variance? 
 
 Well, it's an intrinsic characteristic when training a single decision tree.
 
