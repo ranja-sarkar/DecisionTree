@@ -47,19 +47,21 @@ Read: https://sebastianraschka.com/faq/docs/decisiontree-error-vs-entropy.html
 The recursive process stops if after a split all elements in a child node are of the similar. Additional stopping conditions may be imposed, such as requiring a minimum number of samples per leaf to continue splitting, or finishing when the trained tree has reached a given maximum depth. 
 
 
-# Anomaly detection with decision trees
+# Anomaly detection with decision trees (IF)
 
 **Isolation Forest is one algorithm for anomaly detection.** It's an unsupervised learning algorithm that assumes most inflowing data are normal and only a minor percentage is anomalous. 
 
-In Isolation Forest, randomly sub-sampled data is processed based on randomly selected features. The samples that travel deeper into the tree are less likely to be outliers as they require more cuts to isolate.
+In Isolation Forest (IF), randomly sub-sampled data is processed based on randomly selected features. The samples that travel deeper into the tree are less likely to be outliers as they require more cuts to isolate.
 
 <img width="316" alt="33" src="https://github.com/user-attachments/assets/009b5e4b-7824-48b3-a3d8-65baf8e888b2" />
 
 Example (multivariate dataset): https://fraud-detection-handbook.github.io/fraud-detection-handbook/Chapter_7_DeepLearning/Autoencoders.html#comparison-with-another-unsupervised-baseline-isolation-forest
 
-# Overfitting by a decision tree
+# Decision tree tends to overfit on data
 
 Decision Trees are subject to high variance when exposed to small perturbations of the training data. They typically lead to overfitting - unable to distinguish between persistent and random patterns in data. This is problematic because it means that our model won't perform well when exposed to new data. 
+
+https://scikit-learn.org/stable/modules/tree.html
 
 There are ways to prevent excessive growth of decision trees by pruning them, for instance constraining their maximum depth, limiting the number of leaves that can be created, or setting a minimum size of samples in each leaf and not allowing leaves with too few items in them.
 
