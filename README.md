@@ -77,9 +77,7 @@ There are ways to prevent excessive growth of decision trees by pruning them, fo
    
 💡 How to handle the issue of high variance? 
 
-Well, it's an intrinsic characteristic when training a single decision tree.
-
-One way to alleviate the instability or high variance induced by perturbations is to introduce an extra layer of randomness in the training process. In practice this can be achieved by creating collections of decision trees trained on slightly different versions of the dataset, the combined predictions of which do not suffer so heavily from high variance. This approach opens the door to one of the most successful ML algorithms thus far - random forest.
+Well, it's an intrinsic characteristic when training a single decision tree. One way to alleviate the instability or high variance induced by perturbations is to introduce an extra layer of randomness in the training process. In practice, this can be achieved by creating collections of decision trees trained on slightly different versions of the dataset, the combined (averaged) prediction of which do not suffer heavily from high variance. This approach opens the door to one of the most successful ML algorithms thus far, **random forest**.
 
 https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
 
