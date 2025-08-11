@@ -57,6 +57,9 @@ In Isolation Forest (IF), randomly sub-sampled data is processed based on random
 
 Example (multivariate dataset): https://fraud-detection-handbook.github.io/fraud-detection-handbook/Chapter_7_DeepLearning/Autoencoders.html#comparison-with-another-unsupervised-baseline-isolation-forest
 
+Commercially available platform for anomaly detection task: https://www.eyer.ai/blog/no-code-anomaly-detection-a-primer/
+
+
 # Decision tree tends to overfit on data
 
 A decision tree is subjected to high variance when exposed to small perturbations of the training data. It typically leads to overfitting - unable to distinguish between persistent and random patterns in data. This is problematic because it means that our model won't perform well when exposed to new data. 
