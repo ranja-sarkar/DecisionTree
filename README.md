@@ -48,20 +48,11 @@ Decision trees classify a dataset based on the features in the dataset. In decis
 
 The feature values at the child nodes are as pure as possible, and most informative about the target/response in the dataset. 
 
----
+# Anomaly detection with decision trees 
 
-# Anomaly detection with decision trees (IF)
-
-**Isolation Forest is one algorithm for anomaly detection.** It's an unsupervised learning algorithm that assumes most inflowing data are normal and only a minor percentage is anomalous. 
-
-In Isolation Forest (IF), randomly sub-sampled data is processed based on randomly selected features. The samples that travel deeper into the tree are less likely to be outliers as they require more cuts to isolate.
+Isolation Forest is a tree-based algorithm for anomaly detection. It is an unsupervised learning algorithm that assumes most inflowing data are normal and only a minor percentage is anomalous. In Isolation Forest (IF), randomly sub-sampled data is processed based on randomly selected features. The samples that travel deeper into the tree are less likely to be outliers as they require more cuts to isolate.
 
 <img width="316" alt="33" src="https://github.com/user-attachments/assets/009b5e4b-7824-48b3-a3d8-65baf8e888b2" />
-
-Example (multivariate dataset): https://fraud-detection-handbook.github.io/fraud-detection-handbook/Chapter_7_DeepLearning/Autoencoders.html#comparison-with-another-unsupervised-baseline-isolation-forest
-
-Commercially available platform for anomaly detection task: https://www.eyer.ai/blog/no-code-anomaly-detection-a-primer/
-
 
 # Decision tree tends to overfit on data
 
