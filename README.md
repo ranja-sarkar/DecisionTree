@@ -59,5 +59,6 @@ Well, the high variance is an intrinsic characteristic when training a single de
 [Random forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) is ensemble learning. So, well-placed randomness can enhance a decision tree model. A bagging (bootstrapping followed by aggregating) ensemble is [random forest](https://mlu-explain.github.io/random-forest/).
 
 <img width="332" height="173" alt="dt" src="https://github.com/user-attachments/assets/0323ed37-1a74-42b7-bdbc-7d4a70818a67" />
+<img width="1280" height="720" alt="rf" src="https://github.com/user-attachments/assets/2b0e5ec0-bf0e-4235-bad4-d68a00dc4f95" />
 
 
