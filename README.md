@@ -50,18 +50,12 @@ Isolation Forest is a tree-based algorithm for anomaly detection. It is an unsup
 
 <img width="316" alt="33" src="https://github.com/user-attachments/assets/009b5e4b-7824-48b3-a3d8-65baf8e888b2" />
 
-#  Decision tree tends to overfit on data
+#  A decision tree tends to overfit on data
 
-A decision tree is subjected to high variance when exposed to small perturbations of the training data. It typically leads to overfitting - unable to distinguish between persistent and random patterns in data. This is problematic because it means that our model won't perform well when exposed to new data. 
+A decision tree is subjected to high variance when exposed to small perturbations of the training data. It typically leads to overfitting, that is the tree is unable to distinguish between persistent patterb and random pattern in data. This is problematic because it means that our model won't perform well when exposed to new data. 
 
-DTs: https://scikit-learn.org/stable/modules/tree.html
+Well, the high variance is an intrinsic characteristic when training a single decision tree. One way to alleviate the instability induced by perturbations is to introduce an extra layer of randomness in the training process. In practice, this can be achieved by creating collection of decision trees trained on slightly different versions of the dataset, the combined (averaged) prediction of which do not suffer heavily from high variance. This approach opens the door to one of the most successful machine learning algorithms thus far - random forest.
 
-   
-💡 How to handle the issue of high variance? 
+[Random forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) is ensemble learning. So, well-placed randomness can enhance a decision tree model. A bagging (bootstrapping followed by aggregating) ensemble is [random forest](https://mlu-explain.github.io/random-forest/).
 
-Well, it's an intrinsic characteristic when training a single decision tree. One way to alleviate the instability or high variance induced by perturbations is to introduce an extra layer of randomness in the training process. In practice, this can be achieved by creating collections of decision trees trained on slightly different versions of the dataset, the combined (averaged) prediction of which do not suffer heavily from high variance. This approach opens the door to one of the most successful ML algorithms thus far, **random forest** (ensemble learning).
-
-https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
-
-The Algorithm: https://mlu-explain.github.io/random-forest/
 
