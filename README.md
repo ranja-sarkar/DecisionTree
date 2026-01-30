@@ -10,21 +10,19 @@ In information theory, the mutual information between two quantities is a measur
 
 The node-splitting criterion in a decision tree is [Shannon entropy](http://www.ueltschi.org/teaching/chapShannon.pdf), which is equivalent to minimizing the log loss (also called cross-entropy). 
 
-Information gain is a measure of the information a feature provides about a class. It is the metric to quantify the reduction in randomness of dataset, post-split into homogeneous subsets of data. The impurity of a dataset is measured using criterion like 𝒆𝒏𝒕𝒓𝒐𝒑𝒚 (H) and 𝑮𝒊𝒏𝒊 index.
-
------
+Information gain is a measure of the information a feature provides about a class. It is the metric to quantify the reduction in randomness of dataset post-splitting, into homogeneous subsets of data. The impurity of a dataset is measured using criterion like 𝒆𝒏𝒕𝒓𝒐𝒑𝒚 (H) and 𝑮𝒊𝒏𝒊 (G) index.
 
 Decision trees trained using entropy or Gini index are comparable, and only in a few cases do results differ considerably. In the case of imbalanced data, entropy might be more prudent, yet Gini index might train faster as it does not make use of logarithms.
 
+High information gain (IG) implies that a split leads to more homogenous subsets, making it favorable for building an accurate classifier. 
+A decision tree algorithm uses IG to split a node and choose the features, that lead to maximum reduction in uncertainty or impurity in the child nodes over that in the parent node. 
 
-
-
-
+-----
 
 
 <img width="260" alt="ig" src="https://github.com/user-attachments/assets/5cd97a94-50e6-474f-a9ed-b70f4049b128" />
 
-High **information gain (IG)** implies that a split leads to more homogenous subsets, making it favorable for building an accurate classifier. A decision tree algorithm uses information gain to split a node and choose the features that lead to maximum reduction in uncertainty (impurity) in the child nodes over that in the parent node. 
+
 
 <img width="222" alt="11" src="https://github.com/user-attachments/assets/3163e8df-d86a-42b2-bc46-e6216ef0c3e9" />
 
