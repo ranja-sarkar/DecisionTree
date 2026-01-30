@@ -1,10 +1,6 @@
-# Decision Trees
+A decision tree consists of a series of sequential decision nodes on features from a dataset. The resulting flow-like structure is navigated via conditional control statements or if-then rules. The rules split each node into two or more leaf nodes. To train a decision tree out of a dataset means to figure out the order in which the decisions should be assembled from the root to the leaves. New datapoint may then be passed from top down until the leaf or terminal node is reached, representing a prediction for that datapoint. 
 
-A **decision tree** consists of a series of sequential decisions (decision nodes) on features from a dataset. The resulting flow-like structure is navigated via conditional control statements or if-then rules, which split each node into two or more leaf nodes. 
-
-To train a decision tree out of a dataset means to figure out the order in which the decisions should be assembled from the root to the leaves. New datapoint may then be passed from top down until the leaf (terminal) node is reached, representing a prediction for that datapoint. 
-
-Decision Trees are simple models that are easy to interpret. They're fast to train and require minimal data preprocessing. And they handle outliers with ease. Yet they suffer from a major limitation, and that is their instability compared with other predictors. They can be extremely sensitive to small perturbations in the data: a minor change in the training example can result in a drastic change in the structure of the tree. 
+Decision trees are simple models that are easy to interpret. They're fast to train and require minimal data pre-processing. And they handle outliers with ease. Yet they suffer from a major limitation, and that is their instability as compared to other predictors. They can be extremely sensitive to small perturbations in the data, that is a minor change in the training example can result in a drastic change in the structure of the tree. 
 
 # Mutual Information
 
