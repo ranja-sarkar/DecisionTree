@@ -10,7 +10,9 @@ In information theory, the mutual information between two quantities is a measur
 
 The node-splitting criterion in a decision tree is [Shannon entropy](http://www.ueltschi.org/teaching/chapShannon.pdf), which is equivalent to minimizing the log loss (also called cross-entropy). 
 
-Information gain is a measure of the information a feature provides about a class. It is the metric to quantify the reduction in randomness of dataset post-splitting, into homogeneous subsets of data. The impurity of a dataset is measured using criterion like 𝒆𝒏𝒕𝒓𝒐𝒑𝒚 (H) and 𝑮𝒊𝒏𝒊 (G) index.
+Information gain is a measure of the information a feature provides about a class. It is the metric to quantify the reduction in randomness of dataset post-splitting, into homogeneous subsets of data. The impurity of a dataset is measured using criterion like 𝒆𝒏𝒕𝒓𝒐𝒑𝒚 (H) and 𝑮𝒊𝒏𝒊 (G) index. 
+
+<img width="222" alt="11" src="https://github.com/user-attachments/assets/3163e8df-d86a-42b2-bc46-e6216ef0c3e9" />
 
 Decision trees trained using entropy or Gini index are comparable, and only in a few cases do results differ considerably. In the case of imbalanced data, entropy might be more prudent, yet Gini index might train faster as it does not make use of logarithms.
 
@@ -24,7 +26,7 @@ A decision tree algorithm uses IG to split a node and choose the features, that 
 
 
 
-<img width="222" alt="11" src="https://github.com/user-attachments/assets/3163e8df-d86a-42b2-bc46-e6216ef0c3e9" />
+
 
 For a number of classes, p_k is the fraction of items labeled with a class k. Gini index (G) is faster given its numerical form, it is less computationally intensive and measures the degree or probability of wrong classification when a feature is randomly chosen. 
 
