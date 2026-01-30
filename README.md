@@ -46,13 +46,13 @@ There are ways to prevent excessive growth of [decision trees](https://scikit-le
 
 # Anomaly detection with decision trees 
 
-Isolation Forest is a tree-based algorithm for anomaly detection. It is an unsupervised learning algorithm that assumes most inflowing data are normal and only a minor percentage is anomalous. In Isolation Forest (IF), randomly sub-sampled data is processed based on randomly selected features. The samples that travel deeper into the tree are less likely to be outliers as they require more cuts to isolate.
+Isolation Forest is a tree-based algorithm for anomaly detection. It is an unsupervised learning algorithm that assumes most inflowing data are normal and only a minor percentage is anomalous. In Isolation Forest, randomly sub-sampled data is processed based on randomly selected features. The samples that travel deeper into the tree are less likely to be outliers as they require more cuts to isolate.
 
 <img width="316" alt="33" src="https://github.com/user-attachments/assets/009b5e4b-7824-48b3-a3d8-65baf8e888b2" />
 
 #  A decision tree tends to overfit on data
 
-A decision tree is subjected to high variance when exposed to small perturbations of the training data. It typically leads to overfitting, that is the tree is unable to distinguish between persistent patterb and random pattern in data. This is problematic because it means that our model won't perform well when exposed to new data. 
+A decision tree is subjected to high variance when exposed to small perturbations of the training data. It typically leads to overfitting, that is the tree is unable to distinguish between persistent pattern and random pattern in data. This is problematic because it means that our model won't perform well when exposed to new data. 
 
 Well, the high variance is an intrinsic characteristic when training a single decision tree. One way to alleviate the instability induced by perturbations is to introduce an extra layer of randomness in the training process. In practice, this can be achieved by creating collection of decision trees trained on slightly different versions of the dataset, the combined (averaged) prediction of which do not suffer heavily from high variance. This approach opens the door to one of the most successful machine learning algorithms thus far - random forest.
 
