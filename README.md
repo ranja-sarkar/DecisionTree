@@ -30,6 +30,15 @@ Higher impurities indicate a mix (heterogeneity) of different classes within the
 
 The recursive process stops if after a split all elements in a child node are similar. Additional stopping conditions may be imposed, such as requiring a minimum number of samples per leaf to continue splitting, or finishing when the trained tree has reached a given maximum depth. 
 
+There are ways to prevent excessive growth of [decision trees](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html) by pruning them, like
+
+📌 min_samples_leaf -> setting a minimum size of samples in each leaf (not allowing leaf nodes with too few items in them)
+
+📌 max_depth -> constraining the maximum depth (nodes are expanded until all leaf nodes are pure or they contain less than the minimum number of samples required to split a node
+
+📌 min_samples_split -> minimum number of samples required to split a node (a split at any depth is only considered if there're min_samples_leaf training samples in each of the left and right branches
+
+📌 max_leaf_nodes -> limiting the number of leaf nodes that can be created (best nodes are defined as relative reduction in impurity, if it's None, then unlimited number of leaf nodes are created).
 
 -----
 
@@ -60,17 +69,6 @@ A decision tree is subjected to high variance when exposed to small perturbation
 
 DTs: https://scikit-learn.org/stable/modules/tree.html
 
-There are ways to prevent excessive growth of decision trees by pruning them, for instance 
-
-1. max_depth -> constraining their maximum depth (nodes are expanded until all leaf nodes are pure or they contain less than (min_samples_split) the minimum number of samples required to split a node)
-   
-2. min_samples_split -> minimum number of samples required to split a node (a split at any depth is only considered if there're min_samples_leaf training samples in each of the left and right branches) 
-   
-3. min_samples_leaf -> setting a minimum size of samples in each leaf (not allowing leaf nodes with too few items in them)
-   
-4. max_leaf_nodes -> limiting the number of leaf nodes that can be created (best nodes are defined as relative reduction in impurity. If it's None, then unlimited number of leaf nodes are created).
-
-   Example usage with scikit-learn: https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html
    
 💡 How to handle the issue of high variance? 
 
