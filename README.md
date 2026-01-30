@@ -5,6 +5,7 @@ A decision tree consists of a series of sequential decision nodes on features fr
 Decision trees classify a dataset based on the features in the dataset. In decision trees, each internal/decision mode represents a feature/attribute, each branch is a decision rule and each leaf node is the outcome/result. Decision node represents a parent class and leaf node represents a child class. The feature values at the child nodes are as pure as possible, and most informative about the target/response in the dataset. 
 
 <img width="353" alt="dn" src="https://github.com/user-attachments/assets/656a8b20-bf59-4e21-a40a-9c3dd0464c90" />
+<img width="332" height="173" alt="dt" src="https://github.com/user-attachments/assets/0323ed37-1a74-42b7-bdbc-7d4a70818a67" />
 
 Decision trees are simple models that are easy to interpret. They're fast to train and require minimal data pre-processing. And they handle outliers with ease. Yet they suffer from a major limitation, and that is their instability as compared to other predictors. They can be extremely sensitive to small perturbations in the data, that is a minor change in the training example can result in a drastic change in the structure of the tree. 
 
@@ -58,7 +59,6 @@ Well, the high variance is an intrinsic characteristic when training a single de
 
 [Random forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) is ensemble learning. So, well-placed randomness can enhance a decision tree model. A bagging (bootstrapping followed by aggregating) ensemble is [random forest](https://mlu-explain.github.io/random-forest/).
 
-<img width="332" height="173" alt="dt" src="https://github.com/user-attachments/assets/0323ed37-1a74-42b7-bdbc-7d4a70818a67" />
 <img width="1280" height="720" alt="rf" src="https://github.com/user-attachments/assets/2b0e5ec0-bf0e-4235-bad4-d68a00dc4f95" />
 
 
