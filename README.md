@@ -57,7 +57,7 @@ A decision tree is subjected to high variance when exposed to small perturbation
 
 Well, the high variance is an intrinsic characteristic when training a single decision tree. One way to alleviate the instability induced by perturbations is to introduce an extra layer of randomness in the training process. In practice, this can be achieved by creating collection of decision trees trained on slightly different versions of the dataset, the combined (averaged) prediction of which do not suffer heavily from high variance. This approach opens the door to one of the most successful machine learning algorithms thus far - random forest.
 
-[Random forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) is ensemble learning. So, well-placed randomness can enhance a decision tree model. A bagging (bootstrapping followed by aggregating) ensemble is [random forest](https://mlu-explain.github.io/random-forest/).
+[Random forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) is one of the ensemble learning algorithms. Well-placed randomness can enhance a decision tree model. A bagging (bootstrapping followed by aggregating) ensemble is [random forest](https://mlu-explain.github.io/random-forest/).
 
 <img width="1280" height="720" alt="rf" src="https://github.com/user-attachments/assets/2b0e5ec0-bf0e-4235-bad4-d68a00dc4f95" />
 
