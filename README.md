@@ -14,21 +14,17 @@ Information gain is a measure of the information a feature provides about a clas
 
 <img width="222" alt="11" src="https://github.com/user-attachments/assets/3163e8df-d86a-42b2-bc46-e6216ef0c3e9" />
 
-Decision trees trained using entropy or Gini index are comparable, and only in a few cases do results differ considerably. In the case of imbalanced data, entropy might be more prudent, yet Gini index might train faster as it does not make use of logarithms.
+Decision trees trained using entropy or Gini index are comparable, and only in a few cases do results differ considerably. In the case of imbalanced data, entropy might be more prudent, yet Gini index might train faster as it does not make use of logarithms. For a number of classes, p_k is the fraction of items labeled with a class k. Gini index/coefficient is faster given its numerical form, it is less computationally intensive and measures the degree or probability of wrong classification when a feature is randomly chosen. 
 
 High information gain (IG) implies that a split leads to more homogenous subsets, making it favorable for building an accurate classifier. 
 A decision tree algorithm uses IG to split a node and choose the features, that lead to maximum reduction in uncertainty or impurity in the child nodes over that in the parent node. 
 
+<img width="260" alt="ig" src="https://github.com/user-attachments/assets/5cd97a94-50e6-474f-a9ed-b70f4049b128" />
+
 -----
 
 
-<img width="260" alt="ig" src="https://github.com/user-attachments/assets/5cd97a94-50e6-474f-a9ed-b70f4049b128" />
 
-
-
-
-
-For a number of classes, p_k is the fraction of items labeled with a class k. Gini index (G) is faster given its numerical form, it is less computationally intensive and measures the degree or probability of wrong classification when a feature is randomly chosen. 
 
 **The goal is to find the feature and threshold that best splits the dataset into subsets with lower impurities.** 
 
