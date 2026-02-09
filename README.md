@@ -2,9 +2,10 @@
 
 A decision tree consists of a series of sequential decision nodes on features from a dataset. The resulting flow-like structure is navigated via conditional control statements or if-then rules. The rules split each node into two or more leaf nodes. To train a decision tree out of a dataset means to figure out the order in which the decisions should be assembled from the root to the leaves. New datapoint may then be passed from top down until the leaf or terminal node is reached, representing a prediction for that datapoint. 
 
+<img width="410" height="208" alt="dt1" src="https://github.com/user-attachments/assets/b7dcd752-5059-453a-a19c-327f78176c27" />
+
 Decision trees classify a dataset based on the features in the dataset. In decision trees, each internal/decision mode represents a feature/attribute, each branch is a decision rule and each leaf node is the outcome/result. Decision node represents a parent class and leaf node represents a child class. The feature values at the child nodes are as pure as possible, and most informative about the target/response in the dataset. 
 
-<img width="410" height="208" alt="dt1" src="https://github.com/user-attachments/assets/b7dcd752-5059-453a-a19c-327f78176c27" />
 <img width="332" height="173" alt="dt" src="https://github.com/user-attachments/assets/0323ed37-1a74-42b7-bdbc-7d4a70818a67" />
 
 Decision trees are simple models that are easy to interpret. They're fast to train and require minimal data pre-processing. And they handle outliers with ease. Yet they suffer from a major limitation, and that is their instability as compared to other predictors. They can be extremely sensitive to small perturbations in the data, that is a minor change in the training example can result in a drastic change in the structure of the tree. 
