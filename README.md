@@ -63,3 +63,16 @@ Well, the high variance is an intrinsic characteristic when training a single de
 <img width="1280" height="720" alt="rf" src="https://github.com/user-attachments/assets/2b0e5ec0-bf0e-4235-bad4-d68a00dc4f95" />
 
 
+# Random uses decision tress, [gradient boosting]() does the same
+
+Gradient boosting is another ensemble learning algorithm. Random forest is built for stability, gradient boosting (e.g. XGBoost) is built for peak performance - only if you know when to tell it to stop. What do I mean by this?
+
+𝗥𝗮𝗻𝗱𝗼𝗺 𝗙𝗼𝗿𝗲𝘀𝘁 𝗽𝗿𝗲𝘃𝗲𝗻𝘁𝘀 𝗲𝗿𝗿𝗼𝗿 𝗯𝘆 v𝗼𝘁𝗶𝗻𝗴 - it smooths things out. 𝗕𝗼𝗼𝘀𝘁𝗶𝗻𝗴 𝗽𝗿𝗲𝘃𝗲𝗻𝘁𝘀 𝗲𝗿𝗿𝗼𝗿 𝗯𝘆 c𝗼𝗿𝗿𝗲𝗰𝘁𝗶𝗻𝗴 - it sharpens things up. 
+Random Forest is the safe baseline. It averages out the noise. Boosting is more powerful, but it’s high-maintenance. If you do not use ['Early Stopping']() or tune your learning rate, boosting will chase every outlier until the model is useless in the real world.
+
+It explains why you can add like a thousand trees to a random forest and it won’t overfit, but if you do that with XGBoost, the model usually falls apart.
+
+
+
+
+
