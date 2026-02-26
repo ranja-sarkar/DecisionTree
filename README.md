@@ -2,11 +2,11 @@
 
 A decision tree consists of a series of sequential decision nodes on features from a dataset. The resulting flow-like structure is navigated via conditional control statements or if-then rules. The rules split each node into two or more leaf nodes. To train a decision tree out of a dataset means to figure out the order in which the decisions should be assembled from the root to the leaves. New datapoint may then be passed from top down until the leaf or terminal node is reached, representing a prediction for that datapoint. 
 
-<img width="410" height="208" alt="dt1" src="https://github.com/user-attachments/assets/b7dcd752-5059-453a-a19c-327f78176c27" />
+<img width="332" height="173" alt="dt" src="https://github.com/user-attachments/assets/0323ed37-1a74-42b7-bdbc-7d4a70818a67" />
 
 Decision trees classify a dataset based on the features in the dataset. In decision trees, each internal/decision mode represents a feature/attribute, each branch is a decision rule and each leaf node is the outcome/result. Decision node represents a parent class and leaf node represents a child class. The feature values at the child nodes are as pure as possible, and most informative about the target/response in the dataset. 
 
-<img width="332" height="173" alt="dt" src="https://github.com/user-attachments/assets/0323ed37-1a74-42b7-bdbc-7d4a70818a67" />
+<img width="410" height="208" alt="dt1" src="https://github.com/user-attachments/assets/b7dcd752-5059-453a-a19c-327f78176c27" />
 
 Decision trees are simple models that are easy to interpret. They're fast to train and require minimal data pre-processing. And they handle outliers with ease. Yet they suffer from a major limitation, and that is their instability as compared to other predictors. They can be extremely sensitive to small perturbations in the data, that is a minor change in the training example can result in a drastic change in the structure of the tree. 
 
@@ -48,9 +48,12 @@ There are ways to prevent excessive growth of [decision trees](https://scikit-le
 
 # Anomaly detection with decision trees 
 
-Isolation Forest is a tree-based algorithm for anomaly detection. It is an unsupervised learning algorithm that assumes most inflowing data are normal and only a minor percentage is anomalous. In Isolation Forest, randomly sub-sampled data is processed based on randomly selected features. The samples that travel deeper into the tree are less likely to be outliers as they require more cuts to isolate.
+Isolation Forest is a tree-based algorithm for anomaly detection. It is an unsupervised learning algorithm that assumes most inflowing data are normal and only a minor percentage is anomalous. 
 
 <img width="316" alt="33" src="https://github.com/user-attachments/assets/009b5e4b-7824-48b3-a3d8-65baf8e888b2" />
+
+In [isolation forest](https://github.com/ranja-sarkar/DecisionTree/blob/b6d9a6ab2989843b1ad664d8c4f51b7b7a6488f3/codes/Anomaly_Detection_IF_LOF.ipynb), randomly sub-sampled data is processed based on randomly selected features. The samples that travel deeper into the tree are less likely to be outliers as they require more cuts to isolate.
+
 
 #  A decision tree tends to overfit on data
 
