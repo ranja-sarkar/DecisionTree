@@ -1,3 +1,3 @@
 theme: jekyll-theme-cayman
 title: Decision Trees
-description: Decision trees are non-parametric models, and form the basis of algorithms like Random Forest. 
+description: Decision trees are non-parametric, and form the basis of model algorithms like Random Forest, XGBoost. 
