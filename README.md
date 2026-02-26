@@ -1,4 +1,4 @@
-# Tree-based model
+# Tree-based models
 
 A decision tree consists of a series of sequential decision nodes on features from a dataset. The resulting flow-like structure is navigated via conditional control statements or if-then rules. The rules split each node into two or more leaf nodes. To train a decision tree out of a dataset means to figure out the order in which the decisions should be assembled from the root to the leaves. New datapoint may then be passed from top down until the leaf or terminal node is reached, representing a prediction for that datapoint. 
 
