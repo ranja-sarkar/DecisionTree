@@ -40,6 +40,7 @@ Decision trees trained using entropy or Gini index are comparable, and only in a
 
 <img width="392" alt="22" src="https://github.com/user-attachments/assets/79ade31e-d799-4b4b-9386-226e4a527f4f" />
 
+In the above plot, a set of K=2 classes are considered. Notice how for small values of p, Gini is consistently lower than entropy. Therefore, it penalizes less small impurities. This is a crucial observation that proves helpful for imbalanced datasets.
 
 High information gain (IG) implies that a split leads to more homogenous subsets, making it favorable for building an accurate classifier. 
 A decision tree algorithm uses IG to split a node and choose the features, that lead to maximum reduction in uncertainty or impurity in the child nodes over that in the parent node. 
