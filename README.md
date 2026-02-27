@@ -14,11 +14,26 @@ Decision trees are simple models that are easy to interpret. They're fast to tra
 
 In information theory, the mutual information between two quantities is a measure of the extent to which knowledge of one quantity reduces uncertainty about the other. It quantifies the amount of information obtained about one random variable by observing another random variable. This concept is intimately linked to that of entropy of a random variable. 
 
+---
+
+The relative entropy is given by [KL divergence](https://www.stat.cmu.edu/~cshalizi/754/2006/notes/lecture-28.pdf) which measures the discrepancy between two probability distributions, and from which Shannon entropy can be constructed. Mutual information is a special case of a more general quantity known as [relative entropy](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence). 
+
+<img width="584" height="53" alt="KL" src="https://github.com/user-attachments/assets/445dcda7-5e5d-4494-b5dd-75307ca5b061" />
+
+
+---
+
 The node-splitting criterion in a decision tree is [Shannon entropy](http://www.ueltschi.org/teaching/chapShannon.pdf), which is equivalent to minimizing the log loss (also called cross-entropy). 
 
 Information gain is a measure of the information a feature provides about a class. It is the metric to quantify the reduction in randomness of dataset post-splitting, into homogeneous subsets of data. The impurity of a dataset is measured using criterion like 𝒆𝒏𝒕𝒓𝒐𝒑𝒚 (H) and 𝑮𝒊𝒏𝒊 (G) index. 
 
 <img width="222" alt="11" src="https://github.com/user-attachments/assets/3163e8df-d86a-42b2-bc46-e6216ef0c3e9" />
+
+---
+
+information gain refers to the conditional expected value of the KL (Kullback–Leibler) divergence of the univariate probability distribution of one variable from the conditional distribution of this variable given the other one.
+
+---
 
 Decision trees trained using entropy or Gini index are comparable, and only in a few cases do results differ considerably. In the case of imbalanced data, entropy might be more prudent, yet Gini index might train faster as it does not make use of logarithms. For a number of classes, p_k is the fraction of items labeled with a class k. Gini index/coefficient is faster given its numerical form, it is less computationally intensive and measures the degree or probability of wrong classification when a feature is randomly chosen. The goal is to find the feature and threshold that best splits the dataset into subsets with lower impurities.
 
