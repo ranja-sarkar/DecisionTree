@@ -6,7 +6,8 @@ A decision tree consists of a series of sequential decision nodes on features fr
 
 Decision trees classify a dataset based on the features in the dataset. In decision trees, each internal/decision mode represents a feature/attribute, each branch is a decision rule and each leaf node is the outcome/result. Decision node represents a parent class and leaf node represents a child class. The feature values at the child nodes are as pure as possible, and most informative about the target/response in the dataset. 
 
-<img width="410" height="208" alt="dt1" src="https://github.com/user-attachments/assets/b7dcd752-5059-453a-a19c-327f78176c27" />
+<img width="264" height="178" alt="dt" src="https://github.com/user-attachments/assets/1edf306e-b1d2-4155-a0ea-760375953cbb" />
+
 
 Decision trees are simple models that are easy to interpret. They're fast to train and require minimal data pre-processing. And they handle outliers with ease. Yet they suffer from a major limitation, and that is their instability as compared to other predictors. They can be extremely sensitive to small perturbations in the data, that is a minor change in the training example can result in a drastic change in the structure of the tree. 
 
@@ -31,7 +32,7 @@ Information gain is a measure of the information a feature provides about a clas
 
 ---
 
-information gain refers to the conditional expected value of the KL (Kullback–Leibler) divergence of the univariate probability distribution of one variable from the conditional distribution of this variable given the other one.
+Information gain refers to the conditional expected value of the KL (Kullback–Leibler) divergence of the univariate probability distribution of one variable from the conditional distribution of this variable given the other one.
 
 ---
 
