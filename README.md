@@ -30,6 +30,10 @@ Information gain is a measure of the information a feature provides about a clas
 
 <img width="222" alt="11" src="https://github.com/user-attachments/assets/3163e8df-d86a-42b2-bc46-e6216ef0c3e9" />
 
+While executing a decision tree classifier with [scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html), the default criterion is Gini.
+
+<img width="558" height="83" alt="22" src="https://github.com/user-attachments/assets/4fffdc0e-2b53-4932-bb7b-97f9287ecf12" />
+
 ---
 
 Information gain refers to the conditional expected value of the KL (Kullback–Leibler) divergence of the univariate probability distribution of one variable from the conditional distribution of this variable given the other one.
