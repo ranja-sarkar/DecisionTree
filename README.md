@@ -102,7 +102,15 @@ This explains why you can add like a thousand trees to a random forest and it wo
 
 # Feature Importance
 
+An ensemble method like random forest or xgboost yields featire importances in a dataset. There're ways to find these importances:
 
+1. Impurity-based (computed by mean decrease in impurity)
+
+2. Permutation (computed by permuting the sorted/ordered features, resulting in decrease of model accuracy)
+
+3. SHAPley values
+
+Find a worked out example [here](https://gist.github.com/ranja-sarkar/7271a8369b3df523c1a95261f3070bb9).
 
 
 
