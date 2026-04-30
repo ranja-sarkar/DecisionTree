@@ -4,12 +4,15 @@ A decision tree consists of a series of sequential decision nodes on features fr
 
 <img width="332" height="173" alt="dt" src="https://github.com/user-attachments/assets/0323ed37-1a74-42b7-bdbc-7d4a70818a67" />
 
-Decision trees classify a dataset based on the features in the dataset. In decision trees, each internal/decision mode represents a feature/attribute, each branch is a decision rule and each leaf node is the outcome/result. Decision node represents a parent class and leaf node represents a child class. The feature values at the child nodes are as pure as possible, and most informative about the target/response in the dataset. 
+A Decision tree classifies a dataset based on the features in the dataset. In decision trees, each internal/decision mode represents a feature/attribute, each branch is a decision rule and each leaf node is the outcome/result. Decision node represents a parent class and leaf node represents a child class. The feature values at the child nodes are as pure as possible, and most informative about the target/response in the dataset. 
+
+A decision tree can also be used for [regression](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.html), in which the function (criterion) to measure the quality of a split can be [MSE, MAE](https://ranja-sarkar.github.io/2025/12/18/metrics-in-machine-learning.html) etc.. 
 
 <img width="264" height="178" alt="dt" src="https://github.com/user-attachments/assets/1edf306e-b1d2-4155-a0ea-760375953cbb" />
 
 
-Decision trees are simple models that are easy to interpret. They're fast to train and require minimal data pre-processing. And they handle outliers with ease. Yet they suffer from a major limitation, and that is their instability as compared to other predictors. They can be extremely sensitive to small perturbations in the data, that is a minor change in the training example can result in a drastic change in the structure of the tree. 
+A Decision tree is a simple model, easy to interpret. It is fast to train and require minimal data pre-processing. And it handles outliers with ease. Yet it suffers from a major limitation, that is its instability as compared to other predictors. It can be extremely sensitive to small perturbations in the data, that is a minor change in the training example can result in a drastic change in the structure of the tree. 
+
 
 # Mutual Information
 
@@ -67,6 +70,7 @@ There are ways to prevent excessive growth of [decision trees](https://scikit-le
 
 📌 max_leaf_nodes -> limiting the number of leaf nodes that can be created (best nodes are defined as relative reduction in impurity, if it's None, then unlimited number of leaf nodes are created).
 
+
 # Anomaly detection with decision trees 
 
 Isolation Forest is a tree-based algorithm for anomaly detection. It is an unsupervised learning algorithm that assumes most inflowing data are normal and only a minor percentage is anomalous. 
@@ -82,7 +86,7 @@ A decision tree is subjected to high variance when exposed to small perturbation
 
 Well, the high variance is an intrinsic characteristic when training a single decision tree. One way to alleviate the instability induced by perturbations is to introduce an extra layer of randomness in the training process. In practice, this can be achieved by creating collection of decision trees trained on slightly different versions of the dataset, the combined (averaged) prediction of which do not suffer heavily from high variance. This approach opens the door to one of the most successful machine learning algorithms thus far - random forest.
 
-[Random forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) is one of the ensemble learning algorithms. Well-placed randomness can enhance a decision tree model. A bagging (bootstrapping followed by aggregating) ensemble is [random forest](https://mlu-explain.github.io/random-forest/).
+[Random forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) is one of the ensemble learning algorithms. Well-placed randomness can enhance a decision-tree model. A bagging (bootstrapping followed by aggregating) ensemble is [random forest](https://mlu-explain.github.io/random-forest/).
 
 # Random Forest uses decision trees, Gradient Boosting does the same
 
@@ -95,6 +99,8 @@ The former is the safe baseline. It averages out the noise. The latter is more p
 
 
 This explains why you can add like a thousand trees to a random forest and it won’t overfit, but if you do that with XGBoost, the model usually falls apart.
+
+# Feature Importance
 
 
 
