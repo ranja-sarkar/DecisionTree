@@ -102,7 +102,7 @@ This explains why you can add like a thousand trees to a random forest and it wo
 
 # Feature Importance
 
-An ensemble method like random forest or xgboost yields featire importances in a dataset. There're ways to find these importances:
+An ensemble method like random forest or xgboost yields importance of features in a dataset. There're ways to find these importances:
 
 1. Impurity-based (computed by mean decrease in impurity)
 
